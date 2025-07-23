@@ -58,7 +58,7 @@ jobs:
       #   Simply run the tests for the project.
       ################################################################################
       - name: Run tests
-        run: npm test -- --no-coverage
+        run: npm test
 
       ################################################################################
       # Run coverage check
