@@ -23,7 +23,7 @@
     "abbrev": "1"
   },
   "devDependencies": {
-    "tap": "^14.10.6"
+    "tap": "^20.0.3"
   },
   "files": [
     "bin",
