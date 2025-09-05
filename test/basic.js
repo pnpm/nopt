@@ -190,7 +190,7 @@ test("other tests", function (t) {
     ,["--color --logfd 7", {logfd:7,color:true}, []]
     ,["--color=true", {color:true}, []]
     ,["--logfd=10", {logfd:10}, []]
-    ,["--tmp=/tmp -tar=gtar", {tmp: isWin ? "C:\\tmp" : "/tmp",tar:"gtar"},[]]
+    ,["--tmp=/tmp -tar=gtar", {tmp: isWin ? `${process.cwd().substring(0, 2)}\\tmp` : "/tmp",tar:"gtar"},[]]
     ,["--tmp=tmp -tar=gtar",
       {tmp:path.resolve(process.cwd(), "tmp"),tar:"gtar"},[]]
     ,["--logfd x", {}, []]
